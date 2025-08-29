@@ -5,8 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tonsky.me va panda</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="w-[1000px] mx-auto">
+    <img
+      class="flash"
+      id="flash"
+      src="https://tonsky.me/i/flashlight.webp?t=1754516057"
+      alt="Flash"
+      width="300px"
+      height="300px"
+    />
+    <!-- <button class="border" id="sun">on click</button> -->
+
     <div class="bg-[#ECEEDF]">
       <h1 class="text-[200px] pl-[200px]">Panda</h1>
       <div class="pt-[50px] pb-[100px] pl-[270px]">
@@ -51,17 +62,20 @@
               <li><a class="no-underline pl-[20px]" href="#">Logos</a></li>
             </ul>
           </nav>
+
           <img
-            class="mr-[10px] sun"
+            class="mr-[10px]"
+            id="btnd"
             src="images/sun.svg"
             alt=""
             width="20px"
             height="20px"
           />
+
           <img src="images/burger.svg" alt="" width="20px" height="20px" />
         </header>
         <main>
-          <div class="border rounded-[8px] p-[7px] ">
+          <div class="border rounded-[8px] p-[7px]">
             <p>Hi!</p>
             <p>
               I’m Niki. Here I write about programming and UI design
@@ -70,12 +84,13 @@
             <p>
               I consult companies on all things Clojure: web, backend, Datomic,
               DataScript, performance, etc. Get in touch:
-              <a class="border rounded-[3px] href="#">niki@tonsky.me</a>
+              <a class="border rounded-[3px]" href="#">niki@tonsky.me</a>
             </p>
             <p>
               I also create open-source stuff: Fira Code, DataScript, Clojure
-              Sublimed, Humble&nbsp;UI. Support it on <a class="border rounded-[3px] href="#">Patreon</a> or
-              <a class="border rounded-[3px] href="#">GitHub</a>
+              Sublimed, Humble&nbsp;UI. Support it on
+              <a class="border rounded-[3px]" href="#">Patreon</a> or
+              <a class="border rounded-[3px]" href="#">GitHub</a>
             </p>
           </div>
         </main>
@@ -94,7 +109,7 @@
               <a href="#">When You Get to Be Smart Writing a Macro</a
               ><span class="text-[#616161]"> 5/1</span>
             </p>
-            <h1 class="text-[30px] pt-[45px]" >2024</h1>
+            <h1 class="text-[30px] pt-[45px]">2024</h1>
             <p>
               <a href="#">Where Should Visual Programming Go?</a
               ><span class="text-[#616161]"> 7/18</span>
@@ -453,7 +468,7 @@
         </footer>
       </div>
     </div>
-    <img src="https://tonsky.me/i/flashlight.webp?t=1754516057" alt="" width="250px" height="250px">
+
     <script src="js/app.js"></script>
   </body>
 </html>

@@ -5,3 +5,15 @@ document.querySelectorAll(".btn").forEach((el) => {
     elImg.src = `/images/${e.target.innerText}.png`;
   });
 });
+
+btnd.onclick = () => {
+  document.body.classList.toggle("dark");
+};
+console.log(flash);
+
+window.onmousemove = ({ clientX, clientY }) => {
+  flash.style.cssText = `
+  top: ${clientY - 125}px;
+  left: ${clientX - 125}px;
+  `;
+};
